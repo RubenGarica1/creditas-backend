@@ -5,7 +5,7 @@ const createCreditoAuto = async ({marca, modelo, precio}, _id) => {
     let status=false
     let message=""
     if(precio>=200000 && precio<=500000) {
-      message="La solicitud fue procesada excitosamente"
+      message="La solicitud fue procesada exitosamente"
       status= true
     } else {
       message="Por el momento la solicitud no puede se procesada por que no aplica en nuestros rangos de valuos"

@@ -15,7 +15,7 @@ const createCreditoCasa = async ({domicilioGarantia, valorDomicilio, codigoPosta
     }
     const creditoCasa = creditosCasasModels()
       if(estadovalidation){
-        creditoCasa.message = "La solicitud fue procesada excitosamente"
+        creditoCasa.message = "La solicitud fue procesada exitosamente"
         creditoCasa.status = true
       } else {
         creditoCasa.message = "Por el momento la solicitud no puede se procesada por que no aplica en nuestros rangos de valuos"
