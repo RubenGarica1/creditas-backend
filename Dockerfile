@@ -14,4 +14,4 @@ RUN npm install --global pm2
 COPY ./ ./
 EXPOSE 3002
 
-CMD ["pm2-runtime", "start", "ecosystem.config.js"]
+CMD ["NODE_ENV=production","pm2-runtime", "start", "ecosystem.config.js"]
