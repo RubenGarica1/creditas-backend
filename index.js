@@ -16,7 +16,9 @@ app.use(bodyParser.urlencoded({extended: false}))
 app.use(cors())
 app.use(morgan('dev'))
 app.use("/api", api)
-
+app.get('/', function(req, res) {
+  res.send('not found!');
+});
 app.listen(API_PORT, () => {
   mongoose.connect(URL_MONGO + DB_MONGO, { useNewUrlParser: true, useUnifiedTopology: true }, (err, res) => {
     if (err) {
