@@ -17,6 +17,6 @@ jobs:
       - run: docker login -u ${{secrets.DOCKER_USER}} --password ${{secrets.DOCKER_PASSWORD}}
 
       - run: docker build . -t creditas --build-arg NODE_ENV=production
-      - run: docker tag creditas rubeng12/creditas-front:${GITHUB_REF##*/}
-      - run: docker push rubeng12/creditas-front:${GITHUB_REF##*/}
+      - run: docker tag creditas rubeng12/creditas-backend:${GITHUB_REF##*/}
+      - run: docker push rubeng12/creditas-backend:${GITHUB_REF##*/}
 
