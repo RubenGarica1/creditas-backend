@@ -2,7 +2,7 @@ version: '3.1'
 
 services:
   creditas-backend:
-    image: rubeng12/creditas-backend:1.0.1
+    image: rubeng12/creditas-backend:1.0.2
     container_name: creditas-backend
     restart: always
     ports:
@@ -12,4 +12,4 @@ services:
       - LETSENCRYPT_HOST=creditas.api.rubengarcia.me
       - LETSENCRYPT_EMAIL=rubengarcia182@gmail.com
     expose:
-      - "8080"
+      - "2001"
